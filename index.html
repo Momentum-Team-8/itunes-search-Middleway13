@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="moment.min.js"></script>
-  <script src="main.js" defer></script>
-  <link rel="stylesheet" href="style.css" />
-  <title>Music Search</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Really Awesome Music Site</h1>
-    <form id="music">
-      <input type="text">
-      <input type="search">
-    </form>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Search</title>
+  </head>
+  <body>
+    <header>
+      <h2>Music Search</h2>
+    </header>
+    <div class="container">
+      <form id="form">
+        <input type="text" id="search-input" placeholder="search here" />
+        <button type="submit" id="submit-button">Submit</button>
+        <div class="output">
+          <h3>Search Results:</h3>
+          <ul id="search-output"></ul>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
